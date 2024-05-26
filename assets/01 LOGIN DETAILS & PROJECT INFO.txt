@@ -1,14 +1,13 @@
-**Database Name: payroll_s**
+**Log on to codeastro.com for more projects!**
 
-**Developed by Purusharth Arora**
+**Database Name: hrsystemci**
 
-**Recommended PHP Version 5.6.3**
+**Developed by Nawjesh Soyeb**
+
+**Recommended PHP Version 5.6 or Newer(7.4)**
 
 
-**Login Details**
+**Admin Login Details** 
 
-Username: ethan 
-Password: password
-
-Username: admin
-Password: admin
+Email   : thoma@mail.com
+Password: Password@123
