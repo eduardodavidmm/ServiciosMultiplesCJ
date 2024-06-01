@@ -1,6 +1,6 @@
             </div>
 
-            <footer class="footer"> © <?php echo date('Y')?> | Developed By  codingabel </footer>
+            <footer class="footer"> © <?php echo date('Y')?> | Developed By Futura Group </footer>
 
         </div>
 

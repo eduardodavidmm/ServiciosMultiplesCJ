@@ -7,10 +7,10 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Eduardo David Maldonado @eduardodavidmm on Github">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>HR System</title>
+    <title>Servicios Multiples CJ</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -43,7 +43,7 @@
             <div class="card-body loginpage">
 							<?php if(!empty($this->session->flashdata('feedback'))){ ?>
 							<div class="message">
-							<strong>Danger! </strong><?php echo $this->session->flashdata('feedback')?>
+							<strong>Atención! </strong><?php echo $this->session->flashdata('feedback')?>
 							</div>
 							<?php
 							}
@@ -52,21 +52,21 @@
                     <a href="javascript:void(0)" class="text-center db"><br/><img src="<?php echo base_url(); ?>assets/images/hrinv.png" width="175px" alt="Home" /></a>
                     <div class="form-group m-t-40">
                         <div class="col-xs-12">
-                            <input class="form-control" name="email" value="<?php if(isset($_COOKIE['email'])) { echo $_COOKIE['email']; } ?>" type="text" required placeholder="Email">
+                            <input class="form-control" name="email" value="<?php if(isset($_COOKIE['email'])) { echo $_COOKIE['email']; } ?>" type="text" required placeholder="Correo electrónico">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control" name="password" value="<?php if(isset($_COOKIE['password'])) { echo $_COOKIE['password']; } ?>" type="password" required placeholder="Password">
+                            <input class="form-control" name="password" value="<?php if(isset($_COOKIE['password'])) { echo $_COOKIE['password']; } ?>" type="password" required placeholder="Contraseña">
                         </div>
                     </div>
                  <div class="form-check">
                      <input type="checkbox" name="remember" class="form-check-input" id="remember-me">
-                     <label class="form-check-label" for="remember-me">Remember Me</label>
+                     <label class="form-check-label" for="remember-me">Recordar Cuenta</label>
                  </div>                     
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
-                            <button class="btn btn-success btn-login btn-block text-uppercase waves-effect waves-light" type="submit">Log In</button>
+                            <button class="btn btn-success btn-login btn-block text-uppercase waves-effect waves-light" type="submit">Iniciar Sesión</button>
                         </div>
                     </div>
                 </form>

@@ -4,12 +4,12 @@
             <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Attendance</h3>
+                    <h3 class="text-themecolor">Asistencia</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Attendance</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Asistencia</li>
                     </ol>
                 </div>
             </div>
@@ -17,15 +17,15 @@
 
                 <div class="row m-b-10"> 
                     <div class="col-12">
-                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a href="<?php echo base_url(); ?>attendance/Attendance" class="text-white"><i class="" aria-hidden="true"></i>  Attendance List</a></button>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>leave/Application" class="text-white"><i class="" aria-hidden="true"></i>  Leave Application</a></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a href="<?php echo base_url(); ?>attendance/Attendance" class="text-white"><i class="" aria-hidden="true"></i>  Lista de Asistencia</a></button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>leave/Application" class="text-white"><i class="" aria-hidden="true"></i>  Solicitudes / Aplicantes</a></button>
                     </div>
                 </div>  
                 <div class="row">
                     <div class="col-6">
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white"> Attendance </h4>
+                                <h4 class="m-b-0 text-white"> Asistencia </h4>
                             </div>
                             <div class="card-body">
                                     <form method="post" action="Add_Attendance" id="holidayform" enctype="multipart/form-data">
@@ -37,14 +37,14 @@
                                                    <?php if(!empty($attval->em_code)){ ?>
                                                     <option value="<?php echo $attval->em_code ?>"><?php echo $attval->first_name.' '.$attval->last_name ?></option>           
                                                    <?php } else { ?>
-                                                   <option value="#">Select Here</option>
+                                                   <option value="#">Seleccionar</option>
                                                     <?php foreach($employee as $value): ?>
                                                     <option value="<?php echo $value->em_code ?>"><?php echo $value->first_name.' '.$value->last_name ?></option>
                                                     <?php endforeach; ?>
                                                     <?php } ?>
                                                 </select>
 			                                    </div>
-                                            <label>Select Date: </label>
+                                            <label>Seleccionar Fecha: </label>
                                             <div id="" class="input-group date" >
                                                 <input name="attdate" class="form-control mydatetimepickerFull" value="<?php if(!empty($attval->atten_date)) { 
                                                 $old_date_timestamp = strtotime($attval->atten_date);
@@ -53,27 +53,27 @@
                                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                             </div>
                                         <div class="form-group" >
-                                           <label class="m-t-20">Sign In Time</label>
+                                           <label class="m-t-20">Hora de Ingreso</label>
                                             <input class="form-control" name="signin" id="single-input" value="<?php if(!empty($attval->signin_time)) { echo  $attval->signin_time;} ?>" placeholder="Now" required>
                                         </div>
                                         <div class="form-group">
-                                        <label class="m-t-20">Sign Out Time</label>
+                                        <label class="m-t-20">Hora de Salida</label>
                                         <div class="input-group clockpicker">
                                             <input type="text" name="signout" class="form-control" value="<?php if(!empty($attval->signout_time)) { echo  $attval->signout_time;} ?>">
                                         </div>
                                         </div> 
                                         <div class="form-group">
-                                                    <label>Place</label>
+                                                    <label>Lugar</label>
                                                 <select class="form-control custom-select" data-placeholder="" tabindex="1" name="place" required>
-                                                    <option value="office" <?php if(isset($attval->place) && $attval->place == "office") { echo "selected"; } ?>>Office</option>
-                                                    <option value="field"  <?php if(isset($attval->place) && $attval->place == "field") { echo "selected"; } ?>>Field</option>
+                                                    <option value="office" <?php if(isset($attval->place) && $attval->place == "office") { echo "selected"; } ?>>Oficina</option>
+                                                    <option value="field"  <?php if(isset($attval->place) && $attval->place == "field") { echo "selected"; } ?>>Campo</option>
                                                 </select>
                                         </div> 
                                     </div>
                                     <div class="modal-footer">
                                     <input type="hidden" name="id" value="<?php if(!empty($attval->id)){ echo  $attval->id;} ?>" class="form-control" id="recipient-name1">                                       
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        <button type="submit" id="attendanceUpdate" class="btn btn-success">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" id="attendanceUpdate" class="btn btn-success">Ingresar</button>
                                     </div>
                                     </form>
                             </div>
@@ -84,38 +84,38 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content ">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel1">Holidays</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="exampleModalLabel1">Vacaciones</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true">&times;</span></button>
                                     </div>
                                     <form method="post" action="Add_Holidays" id="holidayform" enctype="multipart/form-data">
                                     <div class="modal-body">
                                         
                                             <div class="form-group">
-                                                <label class="control-label">Holidays name</label>
+                                                <label class="control-label">Vacaciones</label>
                                                 <input type="text" name="holiname" class="form-control" id="recipient-name1" minlength="4" maxlength="25" value="" required>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Holidays Start Date</label>
+                                                <label class="control-label">Inicio de Vacaciones</label>
                                                 <input type="date" name="startdate" class="form-control" id="recipient-name1"  value="">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Holidays End Date</label>
+                                                <label class="control-label">Final de Vacaciones</label>
                                                 <input type="date" name="enddate" class="form-control" id="recipient-name1" value="">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Number of Days</label>
+                                                <label class="control-label">Días</label>
                                                 <input type="number" name="nofdate" class="form-control" id="recipient-name1" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="message-text" class="control-label"> Year</label>
+                                                <label for="message-text" class="control-label"> Año</label>
                                                 <textarea class="form-control" name="year" id="message-text1"></textarea>
                                             </div>                                           
                                         
                                     </div>
                                     <div class="modal-footer">
                                     <input type="hidden" name="id" value="" class="form-control" id="recipient-name1">                                       
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary">Ingresar</button>
                                     </div>
                                     </form>
                                 </div>
