@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div>
@@ -32,7 +32,7 @@
                                         $this->db->from("employee");
                                         echo $this->db->count_all_results();
                                     ?>  Employees</h3>
-                                        <a href="<?php echo base_url(); ?>employee/Employees" class="text-muted m-b-0">View Details</a></div>
+                                        <a href="<?php echo base_url(); ?>employee/Employees" class="text-muted m-b-0">Ver Detalles</a></div>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                                                     echo $this->db->count_all_results();
                                                 ?> Leaves
                                         </h3>
-                                        <a href="<?php echo base_url(); ?>leave/Application" class="text-muted m-b-0">View Details</a>
+                                        <a href="<?php echo base_url(); ?>leave/Application" class="text-muted m-b-0">Ver Detalles</a>
                                         </div>
                                 </div>
                             </div>
@@ -71,9 +71,9 @@
                                                 $this->db->where('pro_status','running');
                                                 $this->db->from("project");
                                                 echo $this->db->count_all_results();
-                                            ?> Projects
+                                            ?> Proyectos
                                         </h3>
-                                        <a href="<?php echo base_url(); ?>Projects/All_Projects" class="text-muted m-b-0">View Details</a>
+                                        <a href="<?php echo base_url(); ?>Projects/All_Projects" class="text-muted m-b-0">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                                                 echo $this->db->count_all_results();
                                             ?> Loan 
                                         </h3>
-                                        <a href="<?php echo base_url(); ?>Loan/View" class="text-muted m-b-0">View Details</a>
+                                        <a href="<?php echo base_url(); ?>Loan/View" class="text-muted m-b-0">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                                         echo $this->db->count_all_results();
                                     ?>
                                 </h1>
-                                <h6 class="text-white">Former Employees</h6>
+                                <h6 class="text-white">Empleados Antiguos</h6>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                                     echo $this->db->count_all_results();
                                                 ?> 
                                 </h1>
-                                <h6 class="text-white">Pending Leave Application</h6>
+                                <h6 class="text-white">Penidente de Aplicantes</h6>
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                                             echo $this->db->count_all_results();
                                         ?> 
                                 </h1>
-                                <h6 class="text-white">Upcoming Project</h6>
+                                <h6 class="text-white">Próximos Proyectos</h6>
                             </div>
                         </div>
                     </div>

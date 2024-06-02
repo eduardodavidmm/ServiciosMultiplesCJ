@@ -4,12 +4,12 @@
             <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Attendance</h3>
+                    <h3 class="text-themecolor">Asistencia</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Attendance</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Asistencia</li>
                     </ol>
                 </div>
             </div>
@@ -17,25 +17,25 @@
 
                 <div class="row m-b-10"> 
                     <div class="col-12">
-                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a href="<?php echo base_url(); ?>attendance/Save_Attendance" class="text-white"><i class="" aria-hidden="true"></i> Add Attendance </a></button>
-                        <button type="button" class="btn btn-info"><a href="<?php echo base_url(); ?>attendance/Attendance_Report" class="text-white"><i class="" aria-hidden="true"></i> Attendance Report </a></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a href="<?php echo base_url(); ?>attendance/Save_Attendance" class="text-white"><i class="" aria-hidden="true"></i> Añadir Asistencia </a></button>
+                        <button type="button" class="btn btn-info"><a href="<?php echo base_url(); ?>attendance/Attendance_Report" class="text-white"><i class="" aria-hidden="true"></i> Reporte de Asistencia </a></button>
                     </div>
                 </div>  
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Attendance Report</h4>
+                                <h4 class="card-title">Reporte de Asistencia</h4>
                                 <form method="post" action="Get_attendance_data_for_report" class="form-material row">
                                     <div class="form-group col-md-3">
-                                        <input type="text" name="date_from" id="date_from" class="form-control mydatetimepickerFull" placeholder="from">
+                                        <input type="text" name="date_from" id="date_from" class="form-control mydatetimepickerFull" placeholder="De">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <input type="text" name="date_to" id="date_to" class="form-control mydatetimepickerFull" placeholder="to">
+                                        <input type="text" name="date_to" id="date_to" class="form-control mydatetimepickerFull" placeholder="Para">
                                     </div>
                                     <div class="form-group col-md-3">
                                         <select class="form-control custom-select"  tabindex="1" name="emid" id="employee_id" required>
-                                        <option>Employee</option>
+                                        <option>Empleado</option>
                                          <?php foreach($employee as $value): ?>
                                          <option value="<?php echo $value->em_id; ?>">
                                             <?php echo $value->first_name ?>
@@ -45,7 +45,7 @@
                                         </select>
                                     </div>
                                     <div class="col-md-3 form-group">
-                                        <input type="submit" class="btn btn-success" value="Submit" name="submit" id="getAtdReport">
+                                        <input type="submit" class="btn btn-success" value="Enviar" name="submit" id="getAtdReport">
                                     </div>
                                 </form>
                             </div>
@@ -56,8 +56,8 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body EmployeeInfo">
-                                <h3 class="employee_name">Employee</h3>
-                                Worked <span class="hours"></span> Hours in <span class="days"></span> days
+                                <h3 class="employee_name">Empleado</h3>
+                                Trabajó <span class="hours"></span> Horas en <span class="days"></span> días
                             </div>
                         </div>
                     </div>
@@ -66,18 +66,18 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Full attendance</h4>
+                                <h4 class="card-title">Asistencia Completa</h4>
                                 <div class="table-responsive ">
                                   <table id="example234" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                       <tr>
                                         <th>PIN </th>
-                                        <th>Name</th>
-                                        <th>Date</th>
-                                        <th>In</th>
-                                        <th>Out</th>
-                                        <th>Hour</th>
-                                        <th>Place</th>
+                                        <th>Nombre</th>
+                                        <th>Fecha</th>
+                                        <th>Entrada</th>
+                                        <th>Salida</th>
+                                        <th>Hora</th>
+                                        <th>Lugar</th>
                                       </tr>
                                     </thead>
                                     <!-- <tfoot>
