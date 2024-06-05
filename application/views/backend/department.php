@@ -3,12 +3,12 @@
          <div class="page-wrapper">
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor"><i class="fa fa-cubes" style="color:#1976d2"></i> Department</h3>
+                    <h3 class="text-themecolor"><i class="fa fa-cubes" style="color:#1976d2"></i> Departamento</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Department</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Departamento</li>
                     </ol>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                         <?php if (isset($editdepartment)) { ?>
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Edit Department</h4>
+                                <h4 class="m-b-0 text-white">Editar Departamento</h4>
                             </div>
                             
                             <?php echo validation_errors(); ?>
@@ -33,7 +33,7 @@
                                             <div class="row ">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="control-label">Department Name</label>
+                                                        <label class="control-label">Nombre del Departamento</label>
                                                         <input type="text" name="department" id="firstName" value="<?php  echo $editdepartment->dep_name;?>" class="form-control" placeholder="">
                                                         <input type="hidden" name="id" value="<?php  echo $editdepartment->id;?>">
                                                     </div>
@@ -43,8 +43,8 @@
                                             <!--/row-->
                                         </div>
                                         <div class="form-actions">
-                                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                            <button type="button" class="btn btn-danger">Cancel</button>
+                                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Guardar</button>
+                                            <button type="button" class="btn btn-danger">Cancelar</button>
                                         </div>
                                     </form>
                             </div>
@@ -53,7 +53,7 @@
 
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Add Department</h4>
+                                <h4 class="m-b-0 text-white">Añadir Departamento</h4>
                             </div>
                             
                             <?php echo validation_errors(); ?>
@@ -67,7 +67,7 @@
                                             <div class="row ">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="control-label">Department Name</label>
+                                                        <label class="control-label">Nombre del Departamento</label>
                                                         <input type="text" name="department" id="firstName" value="" class="form-control" placeholder="" minlength="3" required>
                                                     </div>
                                                 </div>
@@ -76,8 +76,8 @@
                                             <!--/row-->
                                         </div>
                                         <div class="form-actions">
-                                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                            <button type="button" class="btn btn-danger">Cancel</button>
+                                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Guardar</button>
+                                            <button type="button" class="btn btn-danger">Cancelar</button>
                                         </div>
                                     </form>
                             </div>
@@ -88,7 +88,7 @@
                     <div class="col-7">
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white"> Department List</h4>
+                                <h4 class="m-b-0 text-white"> Lista de Departamentos</h4>
                             </div>
                             <?php echo $this->session->flashdata('delsuccess'); ?>
                             <div class="card-body">
@@ -96,8 +96,8 @@
                                     <table id="" class="display  table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>Department Name</th>
-                                                <th>Action</th>
+                                                <th>Nombre del Departamento</th>
+                                                <th>Acción</th>
                                             </tr>
                                         </thead>
                                         <!-- <tfoot>

@@ -9,7 +9,7 @@ date_default_timezone_set('Asia/Dhaka');
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="GenIT Bangladesh">
+    <meta name="author" content="Futura Group / Eduardo David Maldonado - Jose Gabriel Mora">
     <!-- Favicon icon -->
     <?php $settingsvalue = $this->settings_model->GetSettingsValue(); ?>
     <link rel="icon" type="image/ico" sizes="16x16" href="<?php echo base_url(); ?>assets/images/favicn.ico">
@@ -79,7 +79,7 @@ date_default_timezone_set('Asia/Dhaka');
                             <div class="dropdown-menu mailbox scale-up-left">
                                 <ul>
                                     <li>
-                                        <div class="drop-title">Notifications</div>
+                                        <div class="drop-title">Notificaciones</div>
                                     </li>
                                     <li>
                                         <div class="message-center">
@@ -94,7 +94,7 @@ date_default_timezone_set('Asia/Dhaka');
                                         </div>
                                     </li>
                                     <li>
-                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Ver Notificaciones</strong> <i class="fa fa-angle-right"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -114,12 +114,12 @@ date_default_timezone_set('Asia/Dhaka');
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo base_url(); ?>employee/view?I=<?php echo base64_encode($basicinfo->em_id); ?>"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="<?php echo base_url(); ?>employee/view?I=<?php echo base64_encode($basicinfo->em_id); ?>"><i class="ti-user"></i> Perfil</a></li>
                                     <?php if($this->session->userdata('user_type')!='EMPLOYEE'){ ?>
                                     
-                                    <li><a href="<?php echo base_url(); ?>settings/Settings"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li><a href="<?php echo base_url(); ?>settings/Settings"><i class="ti-settings"></i> Propiedades de la Cuenta</a></li>
                                     <?php } ?>
-                                    <li><a href="<?php echo base_url(); ?>login/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    <li><a href="<?php echo base_url(); ?>login/logout"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
                                 </ul>
                             </div>
                         </li>
