@@ -162,7 +162,7 @@
                                                 echo $this->db->count_all_results();
                                             ?> 
                                 </h1>
-                                <h6 class="text-white">Loan Application</h6>
+                                <h6 class="text-white">Aplicación de Préstamo</h6>
                             </div>
                         </div>
                     </div>
@@ -183,16 +183,16 @@
                     <div class="col-md-8">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Running Project/s</h4>
+                                <h4 class="card-title">Proyectos Activos</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive" style="height:600px;overflow-y:scroll">
                                     <table class="table table-bordered table-hover earning-box">
                                         <thead>
                                             <tr>
-                                                <th>Title</th>
-                                                <th>Start Date</th>
-                                                <th>End Date</th>
+                                                <th>Titulo</th>
+                                                <th>Fecha de Inicio</th>
+                                                <th>Fecha Finalización</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -213,8 +213,8 @@
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">To Do list</h4>
-                                <h6 class="card-subtitle">List of your next task to complete</h6>
+                                <h4 class="card-title">Pendientes</h4>
+                                <h6 class="card-subtitle">Lista de Pendientes por completar</h6>
                                 <div class="to-do-widget m-t-20" style="height:550px;overflow-y:scroll">
                                             <ul class="list-task todo-list list-group m-b-0" data-role="tasklist">
                                                <?php foreach($todolist as $value): ?>
@@ -255,16 +255,16 @@
                     <div class="col-lg-8">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Notice Board</h4>
+                                <h4 class="card-title">Tabla de Avisos</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive slimScrollDiv" style="height:600px;overflow-y:scroll">
                                     <table class="table table-hover table-bordered earning-box ">
                                         <thead>
                                             <tr>
-                                                <th>Title</th>
-                                                <th>File</th>
-                                                <th>Date</th>
+                                                <th>Titulo</th>
+                                                <th>Archivo</th>
+                                                <th>Fecha</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -286,7 +286,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    Holidays
+                                    Vacaciones
                                 </h4>
                             </div>
                             <div class="card-body">
@@ -294,8 +294,8 @@
                                     <table class="table table-hover table-bordered earning-box">
                                        <thead>
                                             <tr>
-                                                <th>Holiday Name</th>
-                                                <th>Date</th>
+                                                <th>Nombre</th>
+                                                <th>Fecha</th>
                                             </tr>                                           
                                        </thead>
                                        <tbody>

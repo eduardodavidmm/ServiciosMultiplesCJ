@@ -3,12 +3,12 @@
          <div class="page-wrapper">
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor"><i class="fa fa-map-o" style="color:#1976d2"></i> Designation</h3>
+                    <h3 class="text-themecolor"><i class="fa fa-map-o" style="color:#1976d2"></i> Asignaciones</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Designation</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Asignaciones</li>
                     </ol>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <?php if (isset($editdesignation)) { ?>
                 <div class="card card-outline-info">
                     <div class="card-header">
-                        <h4 class="m-b-0 text-white">Edit Designation</h4>
+                        <h4 class="m-b-0 text-white">Editar Asignación</h4>
                     </div>
                     
                     <?php echo validation_errors(); ?>
@@ -33,7 +33,7 @@
                                     <div class="row ">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="control-label">Designation Name</label>
+                                                <label class="control-label">Nombre de Asignación</label>
                                                 <input type="text" name="designation" id="firstName" value="<?php  echo $editdesignation->des_name;?>" class="form-control" placeholder="">
                                                 <input type="hidden" name="id" value="<?php  echo $editdesignation->id;?>">
                                             </div>
@@ -43,8 +43,8 @@
                                     <!--/row-->
                                 </div>
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                    <button type="button" class="btn btn-danger">Cancel</button>
+                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Guardar</button>
+                                    <button type="button" class="btn btn-danger">Cancelar</button>
                                 </div>
                             </form>
                     </div>
@@ -53,7 +53,7 @@
 
                 <div class="card card-outline-info">
                     <div class="card-header">
-                        <h4 class="m-b-0 text-white">Add Designation</h4>
+                        <h4 class="m-b-0 text-white">Añadir Asignación</h4>
                     </div>
                     
                     <?php echo validation_errors(); ?>
@@ -67,7 +67,7 @@
                                     <div class="row ">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="control-label">Designation Name</label>
+                                                <label class="control-label">Nombre de Asignación</label>
                                                 <input type="text" name="designation" id="firstName" value="" class="form-control" placeholder="" minlength="3" required>
                                             </div>
                                         </div>
@@ -76,8 +76,8 @@
                                     <!--/row-->
                                 </div>
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                    <button type="button" class="btn btn-danger">Cancel</button>
+                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Guardar</button>
+                                    <button type="button" class="btn btn-danger">Cancelar</button>
                                 </div>
                             </form>
                     </div>
@@ -88,7 +88,7 @@
         <div class="col-7">
             <div class="card card-outline-info">
                 <div class="card-header">
-                    <h4 class="m-b-0 text-white"> Designation List</h4>
+                    <h4 class="m-b-0 text-white"> Lista de Asignaciones</h4>
                 </div>
                 <div><?php echo $this->session->flashdata('delsuccess');?></div>
                 <div class="card-body">
@@ -96,8 +96,8 @@
                         <table class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th>Designation </th>
-                                    <th>Action</th>
+                                    <th>Asignaciones </th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <!-- <tfoot>

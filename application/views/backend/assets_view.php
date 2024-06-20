@@ -4,28 +4,28 @@
         <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor"><i class="fa fa-th-large"></i> Asset List</h3>
+                    <h3 class="text-themecolor"><i class="fa fa-th-large"></i> Lista de Activos</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Assets List</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Lista de Activos</li>
                     </ol>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row m-b-10"> 
                     <div class="col-12">
-                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#assetsmodel" data-whatever="@getbootstrap" class="text-white"><i class="" aria-hidden="true"></i> Add Assets </a></button>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Projects/All_Assets" class="text-white"><i class="" aria-hidden="true"></i>  Logistic Support List</a></button>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Projects/All_Assets" class="text-white"><i class="" aria-hidden="true"></i>  Logistic Support</a></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#assetsmodel" data-whatever="@getbootstrap" class="text-white"><i class="" aria-hidden="true"></i> Añadir Activos </a></button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Projects/All_Assets" class="text-white"><i class="" aria-hidden="true"></i>  Lista de Soporte en Logistica </a></button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Projects/All_Assets" class="text-white"><i class="" aria-hidden="true"></i>  Soporte en Logistica </a></button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white"> Assets List</h4>
+                                <h4 class="m-b-0 text-white"> Lista de Activos</h4>
                             </div>
 
                             <div class="card-body">
@@ -35,14 +35,14 @@
                                             <tr><!--
                                                 <th>ID</th>
                                                 <th>Type </th>-->
-                                                <th>category</th>
-                                                <th>Name </th>
-                                                <th>Brand </th>
-                                                <th>Model</th>
-                                                <th>Code </th>
-                                                <th>Configuration </th>
-                                                <th>InStock </th>
-                                                <th>Action </th>
+                                                <th>Categoría</th>
+                                                <th>Nombre </th>
+                                                <th>Marca </th>
+                                                <th>Modelo</th>
+                                                <th>Codigo </th>
+                                                <th>Configuración </th>
+                                                <th>En Stock </th>
+                                                <th>Acción </th>
                                             </tr>
                                         </thead>
                                         <!-- <tfoot>
@@ -89,7 +89,7 @@
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content ">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel1">Add Asset </h4>
+                                        <h4 class="modal-title" id="exampleModalLabel1">Añadir Activo </h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
                                     <form method="post" action="Add_Assets" id="btnSubmit" enctype="multipart/form-data">
@@ -97,46 +97,46 @@
                                            <div class="row">
                                                <div class="col-md-6">      
                                             <div class="form-group">
-                                                <label class="control-label">Asset name</label>
+                                                <label class="control-label">Nombre de Activo</label>
                                                 <input type="text" name="assname" value="" class="form-control" id="recipient-name1" required>
                                             </div>
                                             <div class="form-group">
-                                               <label class="control-label">Category Type </label>
+                                               <label class="control-label">Tipo de Categoría </label>
                                                 <select name="catid" value="" class="select2 form-control custom-select" style="width: 100%" required value="">
-                                                    <option>Select Category</option>
+                                                    <option>Seleccionar Categoría</option>
                                                     <?php foreach($catvalue as $value): ?>
                                                     <option value="<?php echo $value->cat_id ?>"><?php echo $value->cat_name ?></option>
                                                     <?php endforeach; ?>
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Assets Brand</label>
+                                                <label class="control-label">Marca de Activo</label>
                                                 <input type="text" name="brand" value="" class="form-control" id="recipient-name1">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Assets Model</label>
+                                                <label class="control-label">Modelo de Activo</label>
                                                 <input type="text" name="model" value="" class="form-control" id="recipient-name1">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Assets Code</label>
+                                                <label class="control-label">Codigo de Activo</label>
                                                 <input type="text" name="code" value="" class="form-control" id="recipient-name1 ">
                                             </div>                                                   
                                                </div>
                                                <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="control-label">Configuration</label>
+                                                <label class="control-label">Configuración</label>
                                                 <textarea class="form-control" name="config" id="message-text1" required minlength="14" rows="4"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Purchasing Date</label>
+                                                <label class="control-label">Fecha de Compra</label>
                                                 <input type="text" name="purchase" value="" class="form-control mydatepicker" id="recipient-name1">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Price</label>
+                                                <label class="control-label">Precio</label>
                                                 <input type="number" name="price" value="" class="form-control" id="recipient-name1">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Quantity</label>
+                                                <label class="control-label">Cantidad</label>
                                                 <input type="number" name="pqty" value=""
                                                  class="form-control" id="recipient-name1">
                                             </div>                                                   
@@ -150,8 +150,8 @@
                                     </div>
                                     <div class="modal-footer">
                                        <input type="hidden" name="aid" value="">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-success">Ingresar</button>
                                     </div>
                                     </form>
                                 </div>

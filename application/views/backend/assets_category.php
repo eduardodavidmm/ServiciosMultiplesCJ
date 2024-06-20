@@ -4,26 +4,26 @@
             <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor"><i class="fa fa-th-large"></i> Assets</h3>
+                    <h3 class="text-themecolor"><i class="fa fa-th-large"></i> Activos</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Assets Category</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Categoria de Activos</li>
                     </ol>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row m-b-10"> 
                     <div class="col-12">
-                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#assetsmodel" data-whatever="@getbootstrap" class="text-white TypeModal"><i class="" aria-hidden="true"></i> Add Category </a></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#assetsmodel" data-whatever="@getbootstrap" class="text-white TypeModal"><i class="" aria-hidden="true"></i> Añadir Categoría </a></button>
                     </div>
                 </div> 
                 <div class="row">
                     <div class="col-12">
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white"> Assets Category List                       
+                                <h4 class="m-b-0 text-white"> Lista de Categoría de Activos                       
                                 </h4>
                             </div>
                             <div class="card-body">
@@ -32,9 +32,9 @@
                                         <thead>
                                             <tr>
                                                 <th>ID </th>
-                                                <th>Type</th>
-                                                <th>Name </th>
-                                                <th>Action</th>
+                                                <th>Tipo</th>
+                                                <th>Nombre </th>
+                                                <th>Acción</th>
                                             </tr>
                                         </thead>
                                         <!-- <tfoot>
@@ -67,30 +67,30 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content ">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel1">Assets Category</h4>
+                                        <h4 class="modal-title" id="exampleModalLabel1">Categoría de Activos</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
                                     <form method="post" action="Add_Assets_Category" id="assetsform" enctype="multipart/form-data">
                                     <div class="modal-body">
                                         
                                         <div class="form-group">
-                                       <label>Category Type </label>
+                                       <label>Tipo de Categoría </label>
                                         <select name="cattype" class="form-control custom-select" required>
-                                            <option>Select Category</option>
-                                            <option value="ASSETS">Assets</option>
-                                            <option value="LOGISTIC">Logistice</option>
+                                            <option>Seleccionar Categoría</option>
+                                            <option value="ASSETS">Activos</option>
+                                            <option value="LOGISTIC">Logistica</option>
                                         </select>
                                         </div>
                                         <div class="form-group">
-                                        <label>Category Name </label>
-                                        <input type="text" name="catname" class="form-control" value="" placeholder="Category name..." minlength="2" required>
+                                        <label>Nombre de Categoría </label>
+                                        <input type="text" name="catname" class="form-control" value="" placeholder="Nombre de Categoría..." minlength="2" required>
                                         </div>                                          
                                         
                                     </div>
                                     <div class="modal-footer">
                                     <input type="hidden" name="catid" value="" class="form-control" id="recipient-name1">                                       
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-success">Ingresar</button>
                                     </div>
                                     </form>
                                 </div>
