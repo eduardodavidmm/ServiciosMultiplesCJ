@@ -4,12 +4,12 @@
             <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor"><i class="fa fa-bars" aria-hidden="true"></i> Payroll</h3>
+                    <h3 class="text-themecolor"><i class="fa fa-bars" aria-hidden="true"></i> Nómina</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active"><i class="fa fa-university" aria-hidden="true"></i> Payroll</li>
+                        <li class="breadcrumb-item active"><i class="fa fa-university" aria-hidden="true"></i> Nómina</li>
                     </ol>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                 <div class="row m-b-10"> 
                     <div class="col-12">
 <!--                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#TypeModal" data-whatever="@getbootstrap" class="text-white TypeModal"><i class="" aria-hidden="true"></i> Add Payroll </a></button>-->
-                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Payroll/Generate_salary" class="text-white"><i class="" aria-hidden="true"></i>  Generate Payroll</a></button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Payroll/Generate_salary" class="text-white"><i class="" aria-hidden="true"></i>  Generar Nómina</a></button>
                     </div>
                 </div> 
                 <div class="row">
@@ -26,7 +26,7 @@
 
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white"><i class="fa fa-hourglass-start" aria-hidden="true"></i> Payroll List                     
+                                <h4 class="m-b-0 text-white"><i class="fa fa-hourglass-start" aria-hidden="true"></i> Nómina                     
                                 </h4>
                             </div>
                             <div class="card-body">
@@ -35,16 +35,18 @@
                                         <thead>
                                             <tr>
                                                 <th class="hide">SL </th>
-                                                <th>PIN </th>
-                                                <th>Employee </th>
-                                                <th>Month </th>
-                                                <th>Salary </th>
-                                                <th>Loan </th>
-                                                <th>Hours </th>
-                                                <th>Deduction</th>
-                                                <th>Total Paid</th>
-                                                <th>Pay Date</th>
-                                                <th>Status</th>
+                                                <th>Código Empleado </th>
+                                                <th>Empleado </th>
+                                                <th>Mes </th>
+                                                <th>Salario </th>
+                                                <!--<th>Loan </th>-->
+                                                <th>Horas </th>
+                                                <th>Deducciones</th>
+                                                <th>IHSS</th>
+                                                <th>RAP</th>
+                                                <th>Total a Pagar</th>
+                                                <th>Fecha de Pago</th>
+                                                <th>Estado</th>
                                                 <th class="jsgrid-align-center">Action</th>
                                             </tr>
                                         </thead>
@@ -74,10 +76,14 @@
                                                 <td><?php echo $individual_info->first_name.' '.$individual_info->last_name; ?></td>
                                                 <td><?php echo $individual_info->month.' '.$individual_info->year; ?></td>
                                                 <td><?php echo '$'.$individual_info->basic; ?></td>
+                                                <?php /*
                                                 <td><?php echo '$'.$individual_info->loan; ?></td>
+                                                */?>
                                                 <td><?php echo $individual_info->total_days; ?></td>
                                                 <!--<td><?php echo $individual_info->addition; ?></td>-->
                                                 <td><?php echo '$'.$individual_info->diduction; ?></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td><?php echo '$'.$individual_info->total_pay; ?></td>
                                                 <td><?php echo $individual_info->paid_date; ?></td>
                                                 <td><?php echo $individual_info->status; ?></td>

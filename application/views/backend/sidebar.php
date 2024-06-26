@@ -73,9 +73,9 @@
                                 <li><a href="<?php echo base_url(); ?>leave/Leave_report"> Reporte </a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-briefcase-check"></i><span class="hide-menu">Proyectos </span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-briefcase-check"></i><span class="hide-menu">Clientes </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url(); ?>Projects/All_Projects">Proyectos </a></li>
+                                <li><a href="<?php echo base_url(); ?>Projects/All_Projects">Clientes </a></li>
                                 <li><a href="<?php echo base_url(); ?>Projects/All_Tasks"> Lista de Tareas </a></li>
                                 <li><a href="<?php echo base_url(); ?>Projects/Field_visit"> Visitas a Campo</a></li>
                             </ul>
@@ -88,6 +88,7 @@
                                 <li><a href="<?php echo base_url(); ?>Payroll/Payslip_Report"> Reporte de Pagos</a></li>
                             </ul>
                         </li>
+                        <?php /*
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-cash"></i><span class="hide-menu">Loans </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?php echo base_url(); ?>Loan/View"> Loan con Garantía </a></li>
@@ -105,6 +106,7 @@
                         </li>
                         
                         <li> <a href="<?php echo base_url()?>notice/All_notice" ><i class="mdi mdi-clipboard"></i><span class="hide-menu">Avisos <span class="hide-menu"></a></li>
+                        */ ?>
                         <li> <a href="<?php echo base_url(); ?>settings/Settings" ><i class="mdi mdi-settings"></i><span class="hide-menu">Configuración <span class="hide-menu"></a></li>
                         <?php } ?>
                     </ul>
