@@ -210,7 +210,7 @@ class Attendance extends CI_Controller
                                 'status' => 'A'
                                 );
                             $this->attendance_model->Add_AttendanceData($data);
-                            echo "Successfully Added.";
+                            echo "Añadido Exitosamente.";
                         }
                     }
                     }
@@ -224,7 +224,7 @@ class Attendance extends CI_Controller
                                 'status' => 'A'
                                 );
                             $this->attendance_model->Update_AttendanceData($id, $data);
-                            echo "Successfully Updated.";
+                            echo "Añadido Exitosamente.";
                 }
             }
         } else {
@@ -274,7 +274,7 @@ class Attendance extends CI_Controller
 
             }
         }
-         echo "Successfully Updated"; 
+         echo "Actualizado de Forma Exitosa"; 
         }
 
 }

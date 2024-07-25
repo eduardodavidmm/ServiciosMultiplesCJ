@@ -53,9 +53,9 @@ class Dashboard extends CI_Controller {
         $success = $this->dashboard_model->insert_tododata($data);
             #echo "successfully added";
             if($this->db->affected_rows()){
-                echo "Successfully Added";
+                echo "Añadido de Forma Exitosa";
             } else {
-                echo "validation Error";
+                echo "Error al validar";
             }
         }        
     }
@@ -69,10 +69,10 @@ class Dashboard extends CI_Controller {
         $update= $this->dashboard_model->UpdateTododata($id,$data);
         $inserted = $this->db->affected_rows();
 		if($inserted){
-			$message="Successfully Added";
+			$message="Añadido de Forma Exitosa";
 			echo $message;
 		} else {
-			$message="Something went wrong";
+			$message="Algo ha salido mal";
 			echo $message;			
 		}
 	}    

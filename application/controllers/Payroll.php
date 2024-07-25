@@ -208,13 +208,13 @@ class Payroll extends CI_Controller {
                 );
                 $success = $this->loan_model->update_LoanData($loanid,$data);
                     } else {
-                     echo "Successfully added But your Loan number is not available";   
+                     echo "Actualizado exitosamente, id no disponible";   
                     }
                 }
-                echo "Successfully Added";
+                echo "Añadido exitosamente";
                 } else {
                     $success = $this->payroll_model->Update_SalaryPayInfo($id,$data);
-                    echo "Successfully Updated";
+                    echo "Actualizado exitosamente";
                 }
                            
             }

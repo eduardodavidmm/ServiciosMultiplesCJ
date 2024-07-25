@@ -75,7 +75,7 @@ class Login extends CI_Controller {
         
         }
 		else{
-			$this->session->set_flashdata('feedback','UserEmail or Password is Invalid');
+			$this->session->set_flashdata('feedback','Usuario o contraseña inválidos');
 			redirect(base_url() . 'login', 'refresh');
 		}
 	}
@@ -135,10 +135,10 @@ class Login extends CI_Controller {
    
          //Send mail 
          if($this->email->send()){ 
-         	$this->session->set_flashdata('feedback','Kindly check your email To reset your password');
+         	$this->session->set_flashdata('feedback','Verifica tu email para cambiar tu contraseña');
 		 }
          else {
-         $this->session->set_flashdata("feedback","Error in sending Email."); 
+         $this->session->set_flashdata("feedback","Error al enviar Email."); 
 		 }			
 	}
 	public function verification_confirm(){
@@ -152,11 +152,11 @@ class Login extends CI_Controller {
     		);
     		$this->login_model->UpdateStatus($verifycode,$data);
     		if($this->db->affected_rows()){
-			$this->session->set_flashdata('feedback','Your Account has been confirmed!! now login');
+			$this->session->set_flashdata('feedback','Tu cuenta se ha verificado, inicia sesión');
 			$this->load->view('backend/login');
     		}			
 		} else {
-			$this->session->set_flashdata('feedback','Sorry your account has not been varified');
+			$this->session->set_flashdata('feedback','Tu cuenta no se ha podido verificar');
 			$this->load->view('backend/login');  			
 		}
 	}
@@ -179,14 +179,14 @@ class Login extends CI_Controller {
 			if($updateaffect){
 			$email=$this->input->post('email');	
 			$this->send_mail($email,$randcode);
-			$this->session->set_flashdata('feedback','Kindly check your email' .' '.$email. 'To reset your password');
+			$this->session->set_flashdata('feedback','Revisa tu email' .' '.$email. 'para reiniciar tu contraseña');
 			redirect('Retriev');				
 			} else {
 				
 			}
 		} 
 		else {
-			$this->session->set_flashdata('feedback','Please enter a valid email address!');
+			$this->session->set_flashdata('feedback','Por favor, ingresa una cuenta de correo valida');
 			redirect('Retriev');
 		}
 	}
@@ -213,10 +213,10 @@ class Login extends CI_Controller {
    
          //Send mail 
          if($this->email->send()){ 
-         	$this->session->set_flashdata('feedback','Kindly check your email To reset your password');
+         	$this->session->set_flashdata('feedback','Revisa tu email para cambiar tu contraseña');
 		 }
          else {
-         $this->session->set_flashdata("feedback","Error in sending Email."); 
+         $this->session->set_flashdata("feedback","Error al enviar correo."); 
 		 }	
       }
 	public function Reset_View(){
@@ -227,7 +227,7 @@ class Login extends CI_Controller {
 		$this->load->view('backend/reset_page',$data);
 		} 
 		else {
-			$this->session->set_flashdata('feedback','Please enter a valid email address!');
+			$this->session->set_flashdata('feedback','Por favor, ingresa una cuenta de correo valida');
 			redirect('Retriev');
 		}
 	}
@@ -246,15 +246,15 @@ class Login extends CI_Controller {
 			    );
 		$update = $this->login_model->UpdatePassword($key,$data);
 		if($this->db->affected_rows()){
-			$data['message'] = 'Successfully Updated your password!!';
+			$data['message'] = 'Contraseña actualizada de forma exitosa';
 		    $this->load->view('backend/login',$data);
 		}
 		} else {
-         	$this->session->set_flashdata('feedback','You enter your old password.Please enter new password');
+         	$this->session->set_flashdata('feedback','Ingresaste tu contraseña antigua, por favor ingresa una nueva');
          	redirect('Reset_password?p='.$key);			
 		}
 		} else {
-         	$this->session->set_flashdata('feedback','Password does not match');
+         	$this->session->set_flashdata('feedback','Las contraseñas no coinciden');
          	redirect('Reset_password?p='.$key);
 		}
 	}	

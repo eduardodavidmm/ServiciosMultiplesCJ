@@ -722,9 +722,9 @@ class Projects extends CI_Controller
 			$wasUpdated = $this->project_model->updateFieldVistApplication($fieldApplicationID, $data);
 
 			if ($wasUpdated) {
-				echo "Updated successfully";
+				echo "Actualizado exitosamente";
 			} else {
-				echo "Something went wrong. Please check again.";
+				echo "Algo salió mal. Intenta de nuevo.";
 			}
 		}
 	}

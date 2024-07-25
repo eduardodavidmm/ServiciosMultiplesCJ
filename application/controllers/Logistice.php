@@ -245,10 +245,10 @@ class Logistice extends CI_Controller {
                 );
             if(empty($id)){
                 $success = $this->logistic_model->Add_Assets_Category($data);
-                 echo "Successfully Added";
+                 echo "Actualizado exitosamente";
             } else {
                 $success = $this->logistic_model->Update_Assets_Category($id,$data);
-                 echo "Successfully Updated";
+                 echo "Actualizado exitosamente";
             }
                        
         }

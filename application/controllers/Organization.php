@@ -46,7 +46,7 @@ class Organization extends CI_Controller {
         $data = array();
         $data = array('dep_name' => $dep);
         $success = $this->organization_model->Add_Department($data);
-        $this->session->set_flashdata('feedback','Successfully Added');
+        $this->session->set_flashdata('feedback','Actualizado exitosamente');
            echo "Successfully Added";
        }
         }
@@ -57,7 +57,7 @@ class Organization extends CI_Controller {
     public function Delete_dep($dep_id){
         if($this->session->userdata('user_login_access') != False) { 
         $this->organization_model->department_delete($dep_id);
-        $this->session->set_flashdata('delsuccess', 'Successfully Deleted');
+        $this->session->set_flashdata('delsuccess', 'Eliminado exitosamente');
         redirect('organization/Department');
         }
     else{

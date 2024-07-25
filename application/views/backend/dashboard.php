@@ -132,7 +132,7 @@
                                                     echo $this->db->count_all_results();
                                                 ?> 
                                 </h1>
-                                <h6 class="text-white">Penidente de Aplicantes</h6>
+                                <h6 class="text-white">Pendiente de Aplicantes</h6>
                             </div>
                         </div>
                     </div>

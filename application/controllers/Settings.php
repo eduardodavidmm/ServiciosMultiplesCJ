@@ -100,7 +100,7 @@ class Settings extends CI_Controller {
 					'address2'=>$address2
                 );
             $success = $this->settings_model->SettingsUpdate($id,$data);
-			echo 'Successfully Updated';
+			echo 'Actualizado exitosamente';
                 #redirect("settings/Settings");
             #$this->session->set_flashdata('feedback','Successfully Updated');    
 			}
