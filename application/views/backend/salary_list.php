@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
                         <li class="breadcrumb-item active"><i class="fa fa-university" aria-hidden="true"></i> Nómina</li>
                     </ol>
                 </div>
@@ -47,7 +47,7 @@
                                                 <th>Total a Pagar</th>
                                                 <th>Fecha de Pago</th>
                                                 <th>Estado</th>
-                                                <th class="jsgrid-align-center">Action</th>
+                                                <th class="jsgrid-align-center">Acción</th>
                                             </tr>
                                         </thead>
                                         <!-- <tfoot>
@@ -103,7 +103,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content ">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel1">Salary Form</h4>
+                                        <h4 class="modal-title" id="exampleModalLabel1">Formulario de Salario</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
                                     <form method="post" action="Add_Salary" id="salaryform" enctype="multipart/form-data">
@@ -117,41 +117,41 @@
                                                 </select>
 			                                    </div> -->                                        
                                             <div class="form-group">
-                                                <label class="control-label">Employee Id</label>
+                                                <label class="control-label">Id de Empleado</label>
                                                 <input type="text" name="emid" class="form-control" id="recipient-name1" value="" readonly>
                                             </div>                                         
                                             <div class="form-group">
-                                                <label class="control-label">Basic</label>
+                                                <label class="control-label">Base</label>
                                                 <input type="text" name="basic" class="form-control" id="recipient-name1" value="">
                                             </div>
-                                            <h4>Addition</h4>                                         
+                                            <h4>Adicional</h4>                                         
                                             <div class="form-group">
-                                                <label class="control-label">Medical</label>
+                                                <label class="control-label">Medico</label>
                                                 <input type="text" name="medical" class="form-control" id="recipient-name1"  value="">
                                             </div>                                         
                                             <div class="form-group">
-                                                <label class="control-label">House Rent</label>
+                                                <label class="control-label">Renta</label>
                                                 <input type="text" name="houserent" class="form-control" id="recipient-name1" value="">
                                             </div>                                         
                                             <div class="form-group">
-                                                <label class="control-label">Bonus</label>
+                                                <label class="control-label">Bono</label>
                                                 <input type="text" name="bonus" class="form-control" id="recipient-name1" value="">
                                             </div>
                                             <h4>Deduction</h4>                                         
                                             <div class="form-group">
-                                                <label class="control-label">Provident Fund</label>
+                                                <label class="control-label">Otros Fondos</label>
                                                 <input type="text" name="provident" class="form-control" id="recipient-name1" value="">
                                             </div>                                         
                                             <div class="form-group">
-                                                <label class="control-label">Insurance</label>
+                                                <label class="control-label">Seguro</label>
                                                 <input type="text" name="bima" class="form-control" id="recipient-name1" value="" >
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Tax</label>
+                                                <label class="control-label">Impuestos</label>
                                                 <input type="text" name="tax" class="form-control" id="recipient-name1"  value="">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Others</label>
+                                                <label class="control-label">Otros</label>
                                                 <input type="text" name="others" class="form-control" id="recipient-name1"  value="">
                                             </div>                                          
                                         
@@ -160,8 +160,8 @@
                                     <input type="hidden" name="sid" value="" class="form-control" id="recipient-name1">                                       
                                     <input type="hidden" name="aid" value="" class="form-control" id="recipient-name1">                                       
                                     <input type="hidden" name="did" value="" class="form-control" id="recipient-name1">                                       
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-success">Ingresar</button>
                                     </div>
                                     </form>
                                 </div>

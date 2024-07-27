@@ -9,16 +9,16 @@ $this->load->view('backend/sidebar');
   </div>
   <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-      <h3 class="text-themecolor"><i class="fa fa-money"></i> Payroll View
+      <h3 class="text-themecolor"><i class="fa fa-money"></i> Nómina 
       </h3>
     </div>
     <div class="col-md-7 align-self-center">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="javascript:void(0)">Home
+          <a href="javascript:void(0)">Inicio
           </a>
         </li>
-        <li class="breadcrumb-item active">Payroll View
+        <li class="breadcrumb-item active">Nómina
         </li>
       </ol>
     </div>
@@ -41,7 +41,7 @@ $this->load->view('backend/sidebar');
                    echo base_url();
                    ?>Payroll/Salary_Type" class="text-white">
             <i class="" aria-hidden="true">
-            </i>   Salary Types
+            </i>   Tipos de Salario
           </a>
         </button>
       </div>
@@ -50,7 +50,7 @@ $this->load->view('backend/sidebar');
       <div class="col-12">
         <div class="card card-outline-info">
           <div class="card-header">
-            <h4 class="m-b-0 text-white"> Monthly Payroll List
+            <h4 class="m-b-0 text-white"> Lista de Salarios Mensuales
             </h4>
           </div>
           <div class="card-body">
@@ -62,7 +62,7 @@ $this->load->view('backend/sidebar');
                                 <form method="post" action="" id="salaryform" class="form-material row">
                   <div class="form-group col-md-4">
                     <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1" id="depid" name="depid" style="margin-top: 21px;" required>
-                      <option value="#">Department
+                      <option value="#">Departmento
                       </option>
                       <?php foreach ($department as $value): ?>
                       <option value="<?php echo $value->id; ?>">
@@ -83,7 +83,7 @@ $this->load->view('backend/sidebar');
                     </div>
                   </div> 
                     <div class="form-group col-md-3">
-                    <button style="float:left;margin-top:23px" type="submit" id="BtnSubmit" class="btn btn-success">Submit</button>          
+                    <button style="float:left;margin-top:23px" type="submit" id="BtnSubmit" class="btn btn-success">Ingresar</button>          
                      </div>
                                 </form>
                             </div>
@@ -97,11 +97,11 @@ $this->load->view('backend/sidebar');
                   <tr>
                     <th>PIN 
                     </th>
-                    <th>Full name
+                    <th>Nombre
                     </th>
-                    <th>Total salary
+                    <th>Total Salario
                     </th>
-                    <th>Action
+                    <th>Acción
                     </th>
                   </tr>
                 </thead>
@@ -154,7 +154,7 @@ $this->load->view('backend/sidebar');
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content ">
           <div class="modal-header">
-            <h4 class="modal-title" id="">Salary Arrangement
+            <h4 class="modal-title" id="">Matriz de Salario
             </h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;
@@ -164,10 +164,10 @@ $this->load->view('backend/sidebar');
           <form method="post" action="pay_salary_add_record" id="generatePayrollForm" enctype="multipart/form-data">
             <div class="modal-body">
               <div class="form-group row">
-                <label class="control-label text-left col-md-3">Employee</label>
+                <label class="control-label text-left col-md-3">Empleado</label>
                 <div class="col-md-9">
                 <select class="form-control custom-select" data-placeholder="Choose a Category" id="emid" tabindex="1" name="emid" id="OnEmValue" required>
-                  <option value="#">Select Here
+                  <option value="#">Seleccionar
                   </option>
                   <?php foreach ($employee as $value): ?>
                   <option value="<?php echo $value->em_id; ?>">
@@ -178,36 +178,36 @@ $this->load->view('backend/sidebar');
                 </div>
               </div>                                        
               <div class="form-group row">
-                <label class="control-label text-left col-md-3">Month
+                <label class="control-label text-left col-md-3">Mes
                 </label>
                 <div class="col-md-9">
                 <input type="hidden" name="year">
                 <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1" name="month" id="salaryMonth" required>
-                  <option value="#">Select Here
+                  <option value="#">Seleccionar
                   </option>
-                  <option value="1">January
+                  <option value="1">Enero
                   </option>
-                  <option value="2">February
+                  <option value="2">Febrero
                   </option>
-                  <option value="3">March
+                  <option value="3">Marzo
                   </option>
-                  <option value="4">April
+                  <option value="4">Abril
                   </option>
-                  <option value="5">May
+                  <option value="5">Mayo
                   </option>
-                  <option value="6">June
+                  <option value="6">Junio
                   </option>
-                  <option value="7">July
+                  <option value="7">Julio
                   </option>
-                  <option value="8">August
+                  <option value="8">Agosto
                   </option>
-                  <option value="9">September
+                  <option value="9">Septiembre
                   </option>
-                  <option value="10">October
+                  <option value="10">Octubre
                   </option>
-                  <option value="11">November
+                  <option value="11">Noviembre
                   </option>
-                  <option value="12">December
+                  <option value="12">Diciembre
                   </option>
                 </select>
                 </div>
@@ -215,25 +215,25 @@ $this->load->view('backend/sidebar');
               <div class="row well"> 
               <div class="col-md-6">                                    
               <div class="form-group row">
-                <label class="control-label text-left col-md-5">Basic Salary
+                <label class="control-label text-left col-md-5">Salario Base
                 </label>
                 <div class="col-md-7">
                 <input type="text" name="basic" class="form-control" id="" value="">
               </div> 
               </div>                                     
               <div class="form-group row">
-                <label class="control-label text-left col-md-5">Working hours
+                <label class="control-label text-left col-md-5">Horas Laboradas
                 </label>
                 <div class="col-md-7">
                     <input type="text" name="month_work_hours" class="form-control thour" value="" readonly>
                 </div>
               </div>                                       
               <div class="form-group row">
-                <label class="control-label text-left col-md-5">Hours worked
+                <label class="control-label text-left col-md-5">Horas
                 </label>
                 <div class="col-md-7">
                 <input type="text" name="hours_worked" class="form-control hours_worked" id="" value="">
-                <span>Work Without Pay:</span><span class="wpay"></span> <span>hrs</span>
+                <span>Trabajo sin pago:</span><span class="wpay"></span> <span>hrs</span>
                 </div>
               </div>                                       
               <div class="form-group row" style="display:none">
@@ -244,14 +244,14 @@ $this->load->view('backend/sidebar');
                 </div>
               </div>                                    
               <div class="form-group row" id="addition">
-                <label class="control-label text-left col-md-5">Addition
+                <label class="control-label text-left col-md-5">Adicional
                 </label>
                 <div class="col-md-7">
                 <input type="text" name="addition" class="form-control" id="" value="">
               </div>
               </div>
               <div class="form-group row">
-                <label class="control-label text-left col-md-5">Pay Date
+                <label class="control-label text-left col-md-5">Fecha de Pago
                 </label>
                 <div class="col-md-7">
                   <input type="text" name="paydate" class="form-control mydatetimepickerFull" id="" value="" required>
@@ -260,21 +260,21 @@ $this->load->view('backend/sidebar');
               </div>
               <div class="col-md-6">                                     
               <div class="form-group row" id="diduction">
-                <label class="control-label text-left col-md-5">Deduction
+                <label class="control-label text-left col-md-5">Deducciones
                 </label>
                 <div class="col-md-7">
                 <input type="text" name="diduction" class="form-control diduction" id="" value="">
               </div>                                      
               </div>                                      
               <div class="form-group row" id="loan">
-                <label class="control-label text-left col-md-5">Loan
+                <label class="control-label text-left col-md-5">Prestamo
                 </label>
                 <div class="col-md-7">
                   <input type="text" name="loan" class="form-control loan" id="" value="">
                 </div>
               </div>                                    
               <div class="form-group row">
-                <label class="control-label text-left col-md-5">Final Salary
+                <label class="control-label text-left col-md-5">Salario Final
                 </label>
                 <div class="col-md-7">
                    <input type="text" name="total_paid" class="form-control total_paid" id="" value="" required>
@@ -295,12 +295,12 @@ $this->load->view('backend/sidebar');
               </div>     
               </div>-->
                                 <div class="form-group row">
-                                    <label class="control-label text-left col-md-5">Status</label><br>
+                                    <label class="control-label text-left col-md-5">Estatus</label><br>
                                     <div class="col-md-7">
                                     <input name="status" type="radio" id="radio_1" data-value="Paid" class="duration" value="Paid" checked="checked">
-                                    <label for="radio_1">Paid</label>
+                                    <label for="radio_1">Pagado</label>
                                     <input name="status" type="radio" id="radio_2" data-value="Process" class="type" value="Process">
-                                    <label for="radio_2">Process</label>
+                                    <label for="radio_2">En Proceso</label>
                                     </div>
                                 </div>                            
               </div>              
@@ -320,21 +320,21 @@ $this->load->view('backend/sidebar');
                 </div>                 
               </div>-->
                                 <div class="form-group row" style="margin-top: 25px;">
-                                    <label class="control-label text-left col-md-3">Paid Type</label><br>
+                                    <label class="control-label text-left col-md-3">Tipo de Pago</label><br>
                                     <div class="col-md-9">
                                     <input name="paid_type" type="radio" id="radio_3" data-value="Hand Cash" class="" value="Hand Cash" checked="checked">
-                                    <label for="radio_3" style="margin-left: 30px">Hand Cash</label>
+                                    <label for="radio_3" style="margin-left: 30px">Efectivo</label>
                                     <input name="paid_type" type="radio" id="radio_4" data-value="Bank" class="type" value="Bank">
-                                    <label for="radio_4" style="margin-left: 130px">Bank</label>
+                                    <label for="radio_4" style="margin-left: 130px">Banco</label>
                                     </div>
                                 </div>                             
             </div>
             <div class="modal-footer">
               <input type="hidden" name="action" value="add" class="form-control" id="formAction">              
               <input type="hidden" name="loan_id" value="" class="form-control" id="loanID">                                      
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar
               </button>
-              <button type="submit" class="btn btn-success">Submit
+              <button type="submit" class="btn btn-success">Ingresar
               </button>
             </div>
           </form>

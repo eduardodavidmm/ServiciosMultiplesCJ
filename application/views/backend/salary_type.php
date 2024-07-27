@@ -4,27 +4,27 @@
             <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Payroll</h3>
+                    <h3 class="text-themecolor">Nómina</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Payroll</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                        <li class="breadcrumb-item active">Nómina</li>
                     </ol>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row m-b-10"> 
                     <div class="col-12">
-                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#TypeModal" data-whatever="@getbootstrap" class="text-white TypeModal"><i class="" aria-hidden="true"></i> Add Salary Type </a></button>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Payroll/Generate_salary" class="text-white"><i class="" aria-hidden="true"></i>  Generate Payroll</a></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-plus"></i><a data-toggle="modal" data-target="#TypeModal" data-whatever="@getbootstrap" class="text-white TypeModal"><i class="" aria-hidden="true"></i> Añadir tipo de Nómina </a></button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-bars"></i><a href="<?php echo base_url(); ?>Payroll/Generate_salary" class="text-white"><i class="" aria-hidden="true"></i>  Generar Pago</a></button>
                     </div>
                 </div> 
                 <div class="row">
                     <div class="col-12">
                         <div class="card card-outline-info">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white"> Types of Salary                   
+                                <h4 class="m-b-0 text-white"> Tipos de Salario                   
                                 </h4>
                             </div>
                             <div class="card-body">
@@ -33,9 +33,9 @@
                                         <thead>
                                             <tr>
                                                 <th>ID </th>
-                                                <th>Salary Type</th>
-                                                <th>Create Date </th>
-                                                <th>Action</th>
+                                                <th>Tipos de Salario</th>
+                                                <th>Crear Fecha </th>
+                                                <th>Acción</th>
                                             </tr>
                                         </thead>
                                         <!-- <tfoot>
@@ -68,26 +68,26 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content ">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel1">Salary Type</h4>
+                                        <h4 class="modal-title" id="exampleModalLabel1">Tipo de Salario</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
                                     <form method="post" action="Add_Sallary_Type" id="typeform" enctype="multipart/form-data">
                                     <div class="modal-body">
                                         
                                             <div class="form-group">
-                                                <label class="control-label">Salary Type</label>
+                                                <label class="control-label">Tipo de Salario</label>
                                                 <input type="text" name="typename" class="form-control" id="recipient-name1" minlength="4" maxlength="25" value="" required>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">Create Date</label>
+                                                <label class="control-label">Crear Fecha</label>
                                                 <input type="date" name="createdate" class="form-control" id="recipient-name1"  value="">
                                             </div>                                          
                                         
                                     </div>
                                     <div class="modal-footer">
                                     <input type="hidden" name="id" value="" class="form-control" id="recipient-name1">                                       
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-success">Ingresar</button>
                                     </div>
                                     </form>
                                 </div>

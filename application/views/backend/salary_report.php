@@ -9,16 +9,16 @@ $this->load->view('backend/sidebar');
   </div>
   <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-      <h3 class="text-themecolor"><i class="fa fa-money"></i> Payroll View
+      <h3 class="text-themecolor"><i class="fa fa-money"></i>Reporte de Salarios
       </h3>
     </div>
     <div class="col-md-7 align-self-center">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="javascript:void(0)">Home
+          <a href="javascript:void(0)">Inicio
           </a>
         </li>
-        <li class="breadcrumb-item active">Payroll View
+        <li class="breadcrumb-item active">Reporte de Salarios
         </li>
       </ol>
     </div>
@@ -33,7 +33,7 @@ $this->load->view('backend/sidebar');
                    echo base_url();
                    ?>Payroll/Salary_Type" class="text-white">
             <i class="" aria-hidden="true">
-            </i>   Payroll List
+            </i>   Lista de Nómina
           </a>
         </button>
       </div>
@@ -42,7 +42,7 @@ $this->load->view('backend/sidebar');
       <div class="col-12">
         <div class="card card-outline-info">
           <div class="card-header">
-            <h4 class="m-b-0 text-white"> Monthly Payroll List
+            <h4 class="m-b-0 text-white"> Nómina Mensual
             </h4>
           </div>
           <div class="card-body">
@@ -54,7 +54,7 @@ $this->load->view('backend/sidebar');
                                 <form method="post" action="" id="salaryform" class="form-material row">
                                     <div class="form-group col-md-3">
                                         <select class="form-control custom-select"  tabindex="1" name="emid" id="emid" style="margin-top: 23px" required>
-                                        <option>Employee</option>
+                                        <option>Empleado</option>
                                          <?php foreach($employee as $value): ?>
                                          <option value="<?php echo $value->em_id; ?>">
                                             <?php echo $value->first_name ?>
@@ -75,7 +75,7 @@ $this->load->view('backend/sidebar');
                                       </div>
                                     </div> 
                                       <div class="form-group col-md-3">
-                                      <button style="float:left;margin-top:23px" type="submit" id="BtnSubmit" class="btn btn-success">Submit</button>          
+                                      <button style="float:left;margin-top:23px" type="submit" id="BtnSubmit" class="btn btn-success">Ingresar</button>          
                                        </div>
                                 </form>
                             </div>
@@ -86,7 +86,7 @@ $this->load->view('backend/sidebar');
             <div class="salaryr">
 
             </div>
-            <button type='button' class='btn btn-primary print_payslip_btn' id='print_payslip_btn'><i class='fa fa-print'></i><i class='' aria-hidden='true' onclick='printDiv()'></i>  Print</button>                                
+            <button type='button' class='btn btn-primary print_payslip_btn' id='print_payslip_btn'><i class='fa fa-print'></i><i class='' aria-hidden='true' onclick='printDiv()'></i>  Imprimir</button>                                
           </div>
         </div>
       </div>
