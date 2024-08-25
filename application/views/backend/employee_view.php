@@ -114,7 +114,8 @@
 				                                            <option value="<?php echo $basic->em_role; ?>"><?php echo $basic->em_role; ?></option>
                                                             <option value="HR">Recursos Humanos</option>
                                                             <option value="EMPLOYEE">Empleado</option>
-                                                            <option value="ADMIN">Super Administrador</option>
+                                                            <option value="ADMIN">Administrador</option>
+                                                            <option value="SUPER ADMIN">Super Administrador</option>
                                                         </select>
                                                     </div>
                                                     <?php } ?>

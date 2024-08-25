@@ -1,6 +1,7 @@
 <?php $this->load->view('backend/header'); ?>
 <?php $this->load->view('backend/sidebar'); ?>
-      <div class="page-wrapper">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">      
+<div class="page-wrapper">
             <div class="message"></div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">

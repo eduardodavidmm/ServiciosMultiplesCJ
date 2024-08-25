@@ -5,6 +5,7 @@ date_default_timezone_set('Asia/Dhaka');
 ?>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,7 +61,9 @@ date_default_timezone_set('Asia/Dhaka');
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?php echo base_url(); ?>"><b>
+                    <?php /*
                         <img src="<?php echo base_url();?>assets/images/hricn.png" alt="DRI" class="DRI-logo" style="width:50px;"/>
+                        */ ?>
                         </b>
                         <!-- Logo text --><span>
                          <img src="<?php echo base_url(); ?>assets/images/<?php echo $settingsvalue->sitelogo; ?>" alt="homepage" class="dark-logo" height="60px" width="100px" />
